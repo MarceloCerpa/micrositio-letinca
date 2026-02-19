@@ -4,57 +4,96 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Marcelo Cerpa | Enlaces</title>
+
     <style>
+        /* VARIABLES PARA CAMBIAR COLORES RÁPIDO */
+        :root {
+            --primary: #cfe6d8;       /* Verde salvia suave */
+            --primary-dark: #b4d8c4; /* Variante más oscura */
+            --text-dark: #111;
+            --text-light: #fff;
+            --bg: #f3f5f4;
+        }
+
         body {
             margin: 0;
             font-family: 'Segoe UI', sans-serif;
-            background: #f3f4f6;
-            color: #111;
+            background: var(--bg);
+            color: var(--text-dark);
             display: flex;
             justify-content: center;
             padding: 40px 20px;
         }
+
         .container {
             width: 100%;
-            max-width: 500px;
+            max-width: 480px;
             background: white;
             padding: 35px;
-            border-radius: 18px;
-            box-shadow: 0px 4px 15px rgba(0,0,0,0.08);
+            border-radius: 20px;
+            box-shadow: 0px 4px 12px rgba(0,0,0,0.06);
+            text-align: center;
         }
-        h1 { text-align: center; margin-bottom: 10px; font-size: 28px; }
-        p.subtitle { text-align: center; margin-top: 0; color: #666; }
+
+        .profile-photo {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 15px;
+            border: 4px solid var(--primary);
+        }
+
+        h1 {
+            font-size: 26px;
+            margin-bottom: 6px;
+        }
+
+        p.subtitle {
+            margin-top: 0;
+            margin-bottom: 25px;
+            color: #666;
+            font-size: 15px;
+        }
+
         .btn {
             display: block;
-            margin: 12px 0;
+            margin: 10px 0;
             padding: 14px 18px;
-            background: #111;
-            color: white;
+            background: var(--primary);
+            color: var(--text-dark);
             text-align: center;
             font-size: 17px;
-            border-radius: 10px;
+            border-radius: 12px;
             text-decoration: none;
+            transition: 0.2s ease;
+            border: 2px solid transparent;
+            font-weight: 500;
         }
-        .btn-outline {
-            background: transparent;
-            border: 2px solid #111;
-            color: #111;
+
+        .btn:hover {
+            background: var(--primary-dark);
         }
     </style>
 </head>
+
 <body>
 <div class="container">
+
+    <!-- FOTO -->
+    <img src="foto.jpg" class="profile-photo" alt="Foto de Marcelo Cerpa">
+
     <h1>Marcelo Cerpa</h1>
     <p class="subtitle">Bienestar • Energía • Salud</p>
 
+    <!-- BOTONES -->
     <a class="btn" href="https://www.instagram.com/marcelocerpaoficial/" target="_blank">Instagram</a>
-    <a class="btn" href="https://web.facebook.com/marcelocerpaoficial/" target="_blank">Facebook</a>
     <a class="btn" href="https://www.tiktok.com/@marcelocerpaoficial" target="_blank">TikTok</a>
     <a class="btn" href="https://www.youtube.com/@MarceloCerpaT" target="_blank">YouTube</a>
     <a class="btn" href="https://www.bienestarnortino.com" target="_blank">Página Web</a>
-    <a class="btn" href="https://wa.me/56942781056" target="_blank">WhatsApp</a>
-
+    <a class="btn" href="https://wa.me/56942781056?text=Hola%20Marcelo,%20quiero%20más%20información" target="_blank">WhatsApp</a>
     <a class="btn" href="NEW PRODUCT SHEET LIV DOYPACK CHILE.pdf" target="_blank">Catálogo PDF</a>
+
 </div>
 </body>
 </html>
