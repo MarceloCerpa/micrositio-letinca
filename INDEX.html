@@ -6,10 +6,10 @@
     <title>Marcelo Cerpa | Enlaces</title>
 
     <style>
-        /* VARIABLES PARA CAMBIAR COLORES RÁPIDO */
+        /* VARIABLES PARA CAMBIAR COLORES FÁCILMENTE */
         :root {
-            --primary: #cfe6d8;       /* Verde salvia suave */
-            --primary-dark: #b4d8c4; /* Variante más oscura */
+            --primary: #cfe6d8;       /* Verde salvia */
+            --primary-dark: #b7d8c9; /* Hover */
             --text-dark: #111;
             --text-light: #fff;
             --bg: #f3f5f4;
@@ -40,7 +40,7 @@
             height: 110px;
             border-radius: 50%;
             object-fit: cover;
-            margin: 0 auto 15px;
+            margin-bottom: 15px;
             border: 4px solid var(--primary);
         }
 
@@ -57,7 +57,10 @@
         }
 
         .btn {
-            display: block;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
             margin: 10px 0;
             padding: 14px 18px;
             background: var(--primary);
@@ -67,13 +70,20 @@
             border-radius: 12px;
             text-decoration: none;
             transition: 0.2s ease;
-            border: 2px solid transparent;
             font-weight: 500;
         }
 
         .btn:hover {
             background: var(--primary-dark);
         }
+
+        /* Tamaño uniforme para los iconos */
+        .btn svg {
+            width: 22px;
+            height: 22px;
+            fill: var(--text-dark);
+        }
+
     </style>
 </head>
 
@@ -86,13 +96,56 @@
     <h1>Marcelo Cerpa</h1>
     <p class="subtitle">Bienestar • Energía • Salud</p>
 
-    <!-- BOTONES -->
-    <a class="btn" href="https://www.instagram.com/marcelocerpaoficial/" target="_blank">Instagram</a>
-    <a class="btn" href="https://www.tiktok.com/@marcelocerpaoficial" target="_blank">TikTok</a>
-    <a class="btn" href="https://www.youtube.com/@MarceloCerpaT" target="_blank">YouTube</a>
-    <a class="btn" href="https://www.bienestarnortino.com" target="_blank">Página Web</a>
-    <a class="btn" href="https://wa.me/56942781056?text=Hola%20Marcelo,%20quiero%20más%20información" target="_blank">WhatsApp</a>
-    <a class="btn" href="NEW PRODUCT SHEET LIV DOYPACK CHILE.pdf" target="_blank">Catálogo PDF</a>
+    <!-- BOTONES CON ICONOS -->
+    
+    <!-- Instagram -->
+    <a class="btn" href="https://www.instagram.com/marcelocerpaoficial/" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2c1.65 0 3 1.35 3 3v10c0 1.65-1.35 3-3 3H7c-1.65 0-3-1.35-3-3V7c0-1.65 1.35-3 3-3h10zm-5 3.5A5.51 5.51 0 006.5 13 5.51 5.51 0 0012 18.5 5.51 5.51 0 0017.5 13 5.51 5.51 0 0012 7.5zm0 2A3.5 3.5 0 0115.5 13 3.5 3.5 0 0112 16.5 3.5 3.5 0 018.5 13 3.5 3.5 0 0112 9.5zm4.75-3.75a1 1 0 100 2 1 1 0 000-2z"/>
+        </svg>
+        Instagram
+    </a>
+
+    <!-- TikTok -->
+    <a class="btn" href="https://www.tiktok.com/@marcelocerpaoficial" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M21 8.5c-1.3.1-2.6-.3-3.7-1.2-1.2-.9-2-2.3-2.2-3.8V3h-3v12.3c0 1.3-.7 2.4-1.9 2.9-1.2.6-2.6.4-3.6-.4a3 3 0 01-.9-3.1c.3-1.1 1.2-2 2.3-2.3.5-.2 1-.2 1.6-.1V10c-.7-.1-1.4 0-2.1.2A5 5 0 004 16c.1 1.3.7 2.5 1.7 3.4a6 6 0 006.5 1 6 6 0 003.4-5.5V9.8c1 1 2.3 1.7 3.8 1.7V8.5z"/>
+        </svg>
+        TikTok
+    </a>
+
+    <!-- YouTube -->
+    <a class="btn" href="https://www.youtube.com/@MarceloCerpaT" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M21.8 8s-.2-1.5-.8-2.2c-.7-.8-1.6-.8-2-0.9C16.2 4.5 12 4.5 12 4.5h-.1s-4.2 0-7 0.4c-.5 0-1.4.1-2 0.9C2.2 6.5 2 8 2 8s-.2 1.7-.2 3.4v1.4C2 14.3 2.2 16 2.2 16s.2 1.5.8 2.2c.7.8 1.6.8 2 0.9 2.8.4 7 .4 7 .4s4.2 0 7-.4c.5-.1 1.3-.1 2-0.9.6-.7.8-2.2.8-2.2s.2-1.7.2-3.4V11.4c0-1.7-.2-3.4-.2-3.4zM10 14.7V9.3l4.8 2.7L10 14.7z"/>
+        </svg>
+        YouTube
+    </a>
+
+    <!-- Página Web -->
+    <a class="btn" href="https://www.bienestarnortino.com" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M12 2a10 10 0 100 20 10 10 0 000-20zm6.9 6h-3a15.3 15.3 0 00-1.6-4.4A8 8 0 0118.9 8zM12 4.1c.7 1 1.4 2.5 1.7 3.9H10.3c.3-1.4 1-2.9 1.7-3.9zM4.5 14a8 8 0 010-4h3.1c-.1.6-.1 1.3-.1 2s0 1.4.1 2H4.5zm.6 2h3a15.3 15.3 0 001.6 4.4A8 8 0 015.1 16zM8.1 8H5.1a8 8 0 013.1-4.4A15.3 15.3 0 008.1 8zm3.9 11.9c-.7-1-1.4-2.5-1.7-3.9h3.4c-.3 1.4-1 2.9-1.7 3.9zM13.6 14h-3.2c-.1-.6-.1-1.3-.1-2s0-1.4.1-2h3.2c.1.6.1 1.3.1 2s0 1.4-.1 2zm1.3 4.4a15.3 15.3 0 001.6-4.4h3a8 8 0 01-4.6 4.4z"/>
+        </svg>
+        Página Web
+    </a>
+
+    <!-- WhatsApp -->
+    <a class="btn" href="https://wa.me/56942781056?text=Hola%20Marcelo,%20quiero%20más%20información" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M12 2a10 10 0 00-8.7 15l-1 4 4.1-1A10 10 0 1012 2zm0 18a8 8 0 01-4.1-1.1l-.3-.2-2.4.6.6-2.3-.2-.3A8 8 0 1112 20zm4.5-5.6c-.2-.1-1.3-.7-1.5-.8-.2-.1-.4-.1-.6.1-.2.3-.7.8-.8.9-.1.1-.3.2-.6.1-.3-.1-1.1-.4-2.1-1.3-.8-.8-1.3-1.7-1.4-2-.1-.3 0-.4.1-.6l.7-.9c.1-.2.1-.3.2-.5 0-.1 0-.3 0-.4-.1-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4 0-.6.3-.2.3-.8.8-.8 2s.8 2.3.9 2.5c.1.2 1.6 2.5 3.8 3.5 2.2 1 2.2.7 2.6.7.4 0 1.3-.5 1.5-1 .2-.5.2-.9.2-1 0-.1-.1-.1-.3-.2z"/>
+        </svg>
+        WhatsApp
+    </a>
+
+    <!-- PDF -->
+    <a class="btn" href="NEW PRODUCT SHEET LIV DOYPACK CHILE.pdf" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M14 2H6a2 2 0 00-2 2v16c0 1.1.9 2 2 2h12a2 2 0 002-2V8l-6-6zm4 18H6V4h7v5h5v11z"/>
+            <path d="M9 13h6v2H9z"/>
+        </svg>
+        Catálogo PDF
+    </a>
 
 </div>
 </body>
